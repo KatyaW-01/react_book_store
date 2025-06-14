@@ -19,7 +19,7 @@ function EditableBookCard({book,handleDeletedBook}) {
       <p>{book.description}</p>
       <p>${book.price}</p>
       <button type="submit" onClick={handleDelete}>Delete</button>
-      <Link to="editForm">
+      <Link to={`/admin/editBook/${book.id}/editForm`}>
         <button>Edit</button>
       </Link>
     </div>

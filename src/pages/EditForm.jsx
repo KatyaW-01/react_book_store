@@ -2,7 +2,7 @@ import React from "react"
 import { useState } from 'react';
 
 function EditForm() {
-  const [formData, setFormData] = useState()
+  
   return (
     <form >
        <label htmlFor="name">Name:</label>

@@ -23,7 +23,7 @@ function App() {
         <Route path="/admin" element={<AdminPortal />}> 
           <Route path="newBook" element={<NewBookForm />} />
           <Route path="editBook" element={<EditableBookList/>} />
-          <Route path="editBook/editForm" element={<EditForm/>} />
+          <Route path="editBook/:id/editForm" element={<EditForm/>} />
         </Route >  
       </Routes>
     </BrowserRouter>
