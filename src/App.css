@@ -5,3 +5,20 @@
   text-align: center;
 }
 
+.book-div {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.book-card {
+  border: 3px solid black;
+  background-color: lightgray;
+  color: black;
+  width: 400px; 
+  height: 300px;
+  padding: 15px;
+  text-align: center;
+  font-size: 17px;
+}

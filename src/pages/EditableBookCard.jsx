@@ -13,7 +13,7 @@ function EditableBookCard({book,handleDeletedBook}) {
     });
   }
   return (
-    <div>
+    <div className="book-card">
       <h2>{book.name}</h2>
       <p>Author: {book.author}</p>
       <p>{book.description}</p>
