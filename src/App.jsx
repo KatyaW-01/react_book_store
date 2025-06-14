@@ -19,7 +19,6 @@ function App() {
         <Route path="/books" element={<Shop />} >
           <Route index element={<BookList />} />
           <Route path="search" element={<SearchBooks />} />
-          <Route path=":id" element={<BookCard />} />
         </Route>
         <Route path="/admin" element={<AdminPortal />}> 
           <Route path="form" element={<AdminForm/>} />

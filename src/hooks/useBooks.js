@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
- function useBooks(url) {
-  const [books, setBooks] = useState(null)
+ function useBooks() {
+  const [books, setBooks] = useState([])
 
   useEffect(() => {
     fetch("http://localhost:3001/books")
