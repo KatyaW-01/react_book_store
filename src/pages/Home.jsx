@@ -4,13 +4,17 @@ import useBooks from "../hooks/useBooks"
 
 function Home() {
   const {storeInfo} = useBooks()
-  console.log(storeInfo)
+  const store = storeInfo[0]
 
   return (
     <>
       <NavBar />
-      <h1>{storeInfo[0].name}</h1>
-      <p>{storeInfo[0].description}</p>
+      {store && (
+      <>
+        <h1>{store.name}</h1>
+        <p>{store.description}</p>
+      </>
+      )}
     </>
   )
 }
