@@ -1,0 +1,68 @@
+{
+  "store_info": [
+    {
+      "id": 1,
+      "name": "Books & Beyond",
+      "description": "A cozy independent bookstore with titles from all genres",
+      "phone_number": "555-1234"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "description": "A thrilling mystery set in Victorian London",
+      "name": "Shadows of the Fog",
+      "author": "L.M. Doyle",
+      "price": 15.99
+    },
+    {
+      "id": 2,
+      "description": "An inspiring memoir about resilience and hope",
+      "name": "Climbing the Quiet Mountain",
+      "author": "Rosa Nguyen",
+      "price": 18.50
+    },
+    {
+      "id": 3,
+      "description": "A comprehensive guide to mastering JavaScript",
+      "name": "JavaScript Unlocked",
+      "author": "Tariq Evans",
+      "price": 27.95
+    },
+    {
+      "id": 4,
+      "description": "A whimsical fantasy tale about a talking cat and a cursed forest",
+      "name": "Whiskers and the Wyrmwood",
+      "author": "Eleanor Sage",
+      "price": 14.25
+    },
+    {
+      "id": 5,
+      "description": "A romantic drama set in post-war Italy",
+      "name": "Letters from Lake Como",
+      "author": "Gianni Bellucci",
+      "price": 16.75
+    },
+    {
+      "id": 6,
+      "description": "An illustrated beginner's guide to plant care",
+      "name": "The Joy of Houseplants",
+      "author": "Nadia Bloom",
+      "price": 20.00
+    },
+    {
+      "id": 7,
+      "description": "A fast-paced sci-fi epic exploring AI and humanity",
+      "name": "Synthetic Skies",
+      "author": "Khalid Monroe",
+      "price": 22.99
+    },
+    {
+      "id": 8,
+      "description": "A collection of poems about love, loss, and healing",
+      "name": "The Sound of Falling Leaves",
+      "author": "Aria Benet",
+      "price": 12.50
+    }
+  ]
+}
