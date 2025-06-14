@@ -2,6 +2,7 @@ import React from "react"
 import {useOutletContext} from "react-router-dom"
 import BookCard from "./BookCard"
 
+
 function BookList() {
   const {books,filteredBooks} = useOutletContext()
   return (
@@ -18,7 +19,7 @@ function BookList() {
         </div>
       ))
     }
-      
+    
     </>
   )
 }
