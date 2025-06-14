@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom"
 
 function EditableBookCard({book,handleDeletedBook}) {
   function handleDelete() {
@@ -18,6 +19,9 @@ function EditableBookCard({book,handleDeletedBook}) {
       <p>{book.description}</p>
       <p>${book.price}</p>
       <button type="submit" onClick={handleDelete}>Delete</button>
+      <Link to="editForm">
+        <button>Edit</button>
+      </Link>
     </div>
   )
 }

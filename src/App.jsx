@@ -6,8 +6,10 @@ import Home from "./pages/Home"
 import Shop from "./pages/Shop"
 import BookList from "./pages/BookList"
 import AdminPortal from "./pages/AdminPortal"
-import AdminForm from "./pages/AdminForm"
+
 import EditableBookList from "./pages/EditableBookList";
+import EditForm from "./pages/EditForm"
+import NewBookForm from "./pages/NewBookForm"
 
 function App() {
 
@@ -19,8 +21,9 @@ function App() {
           <Route index element={<BookList />} />
         </Route>
         <Route path="/admin" element={<AdminPortal />}> 
-          <Route path="form" element={<AdminForm/>} />
+          <Route path="newBook" element={<NewBookForm />} />
           <Route path="editBook" element={<EditableBookList/>} />
+          <Route path="editBook/editForm" element={<EditForm/>} />
         </Route >  
       </Routes>
     </BrowserRouter>
