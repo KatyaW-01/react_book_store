@@ -39,7 +39,7 @@ function AdminPortal() {
         <input type="text" id="price" name="price" value={newBook.price} onChange={handleChange}></input>
         <button type="submit">Submit</button>
       </form>
-      <Link to="/books">Edit Existing Books</Link>
+      <Link to="editBook">Edit Existing Books</Link>
     </>
   )
 }

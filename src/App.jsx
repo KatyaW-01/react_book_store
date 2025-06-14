@@ -7,6 +7,7 @@ import Shop from "./pages/Shop"
 import BookList from "./pages/BookList"
 import AdminPortal from "./pages/AdminPortal"
 import AdminForm from "./pages/AdminForm"
+import EditableBookList from "./pages/EditableBookList";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         </Route>
         <Route path="/admin" element={<AdminPortal />}> 
           <Route path="form" element={<AdminForm/>} />
+          <Route path="editBook" element={<EditableBookList/>} />
         </Route >  
       </Routes>
     </BrowserRouter>
