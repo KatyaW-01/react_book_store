@@ -6,7 +6,6 @@ import useBooks from "../hooks/useBooks"
 
 function Shop() {
   const {books} = useBooks()
-  console.log(books)
 
   return (
     <>
