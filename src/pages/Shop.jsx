@@ -8,11 +8,19 @@ import SearchBooks from "./SearchBooks"
 function Shop() {
   const {books} = useBooks()
 
+  const [searchTerm, setSearchTerm] = useState("")
+
+  const filteredBooks = books.filter((book) => {
+    return book.name && book.name.toLowerCase().includes(searchTerm.toLowerCase())
+  })
+
+ 
+
   return (
     <>
       <NavBar />
-      <SearchBooks />
-      <Outlet context={{books}}/>
+      <SearchBooks searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <Outlet context={{books, filteredBooks}}/>
     </>
   )
 }

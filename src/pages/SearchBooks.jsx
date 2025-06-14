@@ -1,9 +1,17 @@
 import React from "react"
+import useBooks from "../hooks/useBooks"
+import { useState,useEffect } from 'react';
 
-function SearchBooks() {
+function SearchBooks({searchTerm,setSearchTerm}) {
+
+  function handleChange(event) {
+    setSearchTerm(event.target.value) //stores value of input in state
+  }
+
+
   return (
     <>
-    <input type="text" placeholder="Search"></input>
+    <input type="text" placeholder="Search" value={searchTerm} onChange={handleChange}></input>
     </>
   )
 }
