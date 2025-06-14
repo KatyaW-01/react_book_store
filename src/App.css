@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #FFE4E1;
+}
+
 .book-div {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -13,12 +19,16 @@
 }
 
 .book-card {
-  border: 3px solid black;
-  background-color: lightgray;
+  border: 3px solid #D2B48C;
+  background-color: 	#FFEBCD;
   color: black;
   width: 400px; 
   height: 300px;
   padding: 15px;
   text-align: center;
   font-size: 17px;
+}
+
+.store-name {
+
 }
