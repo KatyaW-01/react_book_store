@@ -1,8 +1,15 @@
 import React from "react"
 
-function EditableBookCard({book}) {
+function EditableBookCard({book,handleDeletedBook}) {
   function handleDelete() {
-    
+    fetch(`http://localhost:3001/books/${book.id}`, {
+      method: "DELETE"
+    })
+    .then((response) => {
+      if (response.ok) {
+        handleDeletedBook(book.id);
+      }
+    });
   }
   return (
     <div>
