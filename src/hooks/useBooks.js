@@ -33,7 +33,7 @@ import { useEffect, useState } from 'react';
       .then(addedBook => setBooks([...books, addedBook]))
   }
 
-  return {books, storeInfo, addBook}
+  return {books, setBooks, storeInfo, addBook}
 }
 
 export default useBooks

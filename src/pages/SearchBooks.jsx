@@ -1,15 +1,13 @@
 import React from "react"
 import useBooks from "../hooks/useBooks"
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
-function SearchBooks() {
-  const {books} = useBooks()
-  const [searchTerm, setSearchTerm] = useState("")
- 
+function SearchBooks({searchTerm,setSearchTerm}) {
 
   function handleChange(event) {
     setSearchTerm(event.target.value) //stores value of input in state
   }
+
 
   return (
     <>

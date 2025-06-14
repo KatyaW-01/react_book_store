@@ -3,14 +3,22 @@ import {useOutletContext} from "react-router-dom"
 import BookCard from "./BookCard"
 
 function BookList() {
-  const {books} = useOutletContext()
+  const {books,filteredBooks} = useOutletContext()
   return (
     <>
-      {books.map((book)=>(
+    {filteredBooks.length > 0 ? 
+      filteredBooks.map((book) => (
         <div key={book.id}>
-          <BookCard book={book}/>
+          <BookCard book={book} />
         </div>
-      ))}
+      )) :
+      books.map((book) => (
+        <div key={book.id}>
+          <BookCard book={book} />
+        </div>
+      ))
+    }
+      
     </>
   )
 }
