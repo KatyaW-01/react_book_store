@@ -9,13 +9,13 @@ function EditableBookList() {
   }
 
   return (
-    <>
+    <div className="book-div editable" >
       {books.map((book)=> (
         <div key={book.id}>
         <EditableBookCard book={book} handleDeletedBook={handleDeletedBook}/>
       </div>
       ))} 
-    </>
+    </div>
   )
 }
 

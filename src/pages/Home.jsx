@@ -11,8 +11,8 @@ function Home() {
       <NavBar />
       {store && (
       <>
-        <h1>{store.name}</h1>
-        <p>{store.description}</p>
+        <h1 className="store-name">{store.name}</h1>
+        <p className="store-description" >{store.description}</p>
       </>
       )}
     </>

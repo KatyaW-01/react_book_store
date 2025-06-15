@@ -13,14 +13,14 @@ function EditableBookCard({book,handleDeletedBook}) {
     });
   }
   return (
-    <div>
+    <div className="book-card">
       <h2>{book.name}</h2>
       <p>Author: {book.author}</p>
       <p>{book.description}</p>
       <p>${book.price}</p>
-      <button type="submit" onClick={handleDelete}>Delete</button>
+      <button className="delete-button" type="submit" onClick={handleDelete}>Delete</button>
       <Link to={`/admin/editBook/${book.id}/editForm`}>
-        <button>Edit</button>
+        <button className="edit-button" >Edit</button>
       </Link>
     </div>
   )

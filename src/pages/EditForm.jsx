@@ -1,5 +1,4 @@
 import React from "react"
-import { useState } from 'react';
 
 function EditForm() {
   
@@ -13,7 +12,7 @@ function EditForm() {
         <input type="text" id="description" name="description"></input>
         <label htmlFor="price">Price:</label>
         <input type="text" id="price" name="price"></input>
-        <button type="submit">Save</button>
+        <button className="save-button" type="submit">Save</button>
     </form>
   )
 }

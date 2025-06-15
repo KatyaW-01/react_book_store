@@ -9,8 +9,10 @@ function AdminPortal() {
     <>
       <NavBar />
       <Outlet />
-      <Link to="newBook">Add New Book</Link>
-      <Link to="editBook">Edit Existing Books</Link>
+      <div className="admin-links">
+        <Link className="add-new" to="newBook">Add New Book</Link>
+        <Link className="edit" to="editBook">Edit Existing Books</Link>
+      </div>
     </>
   )
 }

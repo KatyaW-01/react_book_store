@@ -2,7 +2,7 @@ import React from "react"
 
 function BookCard({book}) {
   return (
-    <div>
+    <div className="book-card">
       <h2>{book.name}</h2>
       <p>Author: {book.author}</p>
       <p>{book.description}</p>
