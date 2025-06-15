@@ -70,7 +70,8 @@ input {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 30px;
-  padding: 5px
+  padding: 5px;
+  color: black
 }
 
 .delete-button {
@@ -86,4 +87,12 @@ input {
   padding: 10px;
   border: grey;
   width: 60px
+}
+
+.save-button {
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  border: grey;
+  width: 50px
 }
