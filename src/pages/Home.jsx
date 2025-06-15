@@ -12,7 +12,7 @@ function Home() {
       {store && (
       <>
         <h1 className="store-name">{store.name}</h1>
-        <p>{store.description}</p>
+        <p className="store-description" >{store.description}</p>
       </>
       )}
     </>
