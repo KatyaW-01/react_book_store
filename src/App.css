@@ -16,7 +16,11 @@ html, body {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 20px;
-  margin-top: 20px;
+  
+}
+
+.editable {
+  margin-bottom: 50px;
 }
 
 .book-card {
@@ -54,5 +58,32 @@ html, body {
 }
 
 .navbar {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+label {
+  color: grey
+}
+
+input {
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  padding: 5px
+}
+
+.delete-button {
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  border: grey;
+}
+
+.edit-button {
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  border: grey;
+  width: 60px
 }
