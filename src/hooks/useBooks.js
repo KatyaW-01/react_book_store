@@ -33,7 +33,17 @@ import { useEffect, useState } from 'react';
       .then(addedBook => setBooks([...books, addedBook]))
   }
 
-  return {books, setBooks, storeInfo, addBook}
+  function editBook(bookObject) {
+    fetch("http://localhost:3001/books", {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(bookObject)
+    })
+  }
+
+  return {books, setBooks, storeInfo, addBook, editBook}
 }
 
 export default useBooks

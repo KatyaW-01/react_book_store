@@ -1,7 +1,8 @@
 import React from "react"
+import useBooks from "../hooks/useBooks"
 
 function EditForm() {
-  
+  const {editBook} = useBooks()
   return (
     <form >
        <label htmlFor="name">Name:</label>
