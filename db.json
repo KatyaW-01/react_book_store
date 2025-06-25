@@ -19,7 +19,7 @@
       "id": "5",
       "description": "A romantic drama set in post-war Italy",
       "name": "Letters from Lake Como",
-      "author": "Gianni Bellucci",
+      "author": "Gianno Bellucci",
       "price": 16.75
     },
     {
@@ -27,7 +27,7 @@
       "description": "An illustrated beginner's guide to plant care",
       "name": "The Joy of Houseplants",
       "author": "Nadia Bloom",
-      "price": 20
+      "price": "22"
     },
     {
       "id": "7",

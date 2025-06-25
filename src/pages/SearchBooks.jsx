@@ -1,12 +1,10 @@
 import React from "react"
 
-
 function SearchBooks({searchTerm,setSearchTerm}) {
 
   function handleChange(event) {
     setSearchTerm(event.target.value) //stores value of input in state
   }
-
 
   return (
     <>

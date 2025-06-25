@@ -34,13 +34,21 @@ import { useEffect, useState } from 'react';
   }
 
   function editBook(bookObject) {
-    fetch("http://localhost:3001/books", {
+    fetch(`http://localhost:3001/books/${bookObject.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(bookObject)
     })
+      .then(response => response.json())
+      .then((savedBook) => {
+        setBooks((prevBooks) =>
+          prevBooks.map((book) =>
+            book.id === savedBook.id ? savedBook : book
+          )
+        )
+      })
   }
 
   return {books, setBooks, storeInfo, addBook, editBook}
