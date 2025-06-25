@@ -29,7 +29,7 @@ function NewBookForm() {
         <input type="text" id="description" name="description" value={newBook.description} onChange={handleChange}></input>
         <label htmlFor="price">Price:</label>
         <input type="text" id="price" name="price" value={newBook.price} onChange={handleChange}></input>
-        <button type="submit">Submit</button>
+        <button className="submit-button" type="submit">Submit</button>
       </form>
   )
 }

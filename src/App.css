@@ -78,21 +78,51 @@ input {
   margin-right: 10px;
   border-radius: 5px;
   padding: 10px;
-  border: grey;
+  border: 1px solid grey;
+  background-color: grey
+}
+
+.delete-button:hover {
+  background-color: #696969;
+  border: 1px solid #696969
 }
 
 .edit-button {
   margin-left: 10px;
   border-radius: 5px;
   padding: 10px;
-  border: grey;
+  border:1px solid grey;
+  background-color: grey;
   width: 60px
+}
+
+.edit-button:hover {
+  background-color: #696969;
+  border: 1px solid #696969
 }
 
 .save-button {
   margin-left: 10px;
   border-radius: 5px;
   padding: 5px;
-  border: grey;
+  border:1px solid grey;
+  background-color: grey;
   width: 50px
+}
+
+.save-button:hover {
+  background-color: #696969;
+  border: 1px solid #696969
+}
+
+.submit-button {
+  background-color: grey;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.submit-button:hover {
+  background-color: #696969;
+  border: 1px solid #696969
 }
