@@ -56,6 +56,20 @@
       "author": "Rosa Nguyen",
       "description": "An inspiring memoir about resilience and hope",
       "price": "18.50"
+    },
+    {
+      "id": "9292",
+      "name": "The Clockmaker's Secret",
+      "author": "Mara Elridge",
+      "description": "\"A historical mystery unraveling the secrets hidden within time itself",
+      "price": "13.75"
+    },
+    {
+      "id": "e555",
+      "name": "Beneath the Crimson Sky",
+      "author": "Aria Blackwell",
+      "description": "An epic fantasy journey of rebellion, magic, and ancient prophecies",
+      "price": "22.50"
     }
   ]
 }

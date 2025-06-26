@@ -22,7 +22,7 @@ import { useEffect, useState } from 'react';
 
 
   function addBook(newBook) {
-    fetch("http://localhost:3001/books", {
+    return fetch("http://localhost:3001/books", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -31,6 +31,7 @@ import { useEffect, useState } from 'react';
     })
       .then(response => response.json())
       .then(addedBook => setBooks([...books, addedBook]))
+      
   }
 
   function editBook(bookObject) {

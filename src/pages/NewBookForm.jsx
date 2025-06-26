@@ -4,6 +4,8 @@ import { useState } from 'react';
 function NewBookForm() {
   const {addBook} = useBooks()
   const [newBook, setNewBook] = useState({name: "", author: "", description: "", price: ""})
+  const [success, setSuccess] = useState(false)
+  const [error, setError] = useState(null)
 
   function handleChange(event) {
     const {name, value} = event.target
@@ -17,10 +19,21 @@ function NewBookForm() {
   function handleSubmit(event) {
     event.preventDefault()
     addBook(newBook)
+      .then(() => {
+        setNewBook({name: "", author: "", description: "", price: ""}) 
+        setSuccess(true)
+      })
+      .catch((error)=> {
+        console.log(error)
+        setError("Something went wrong")
+        setSuccess(false)
+      })
+   
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="name">Book Name:</label>
         <input type="text" id="name" name="name" value={newBook.name} onChange={handleChange}></input>
         <label htmlFor="author">Author:</label>
@@ -31,6 +44,9 @@ function NewBookForm() {
         <input type="text" id="price" name="price" value={newBook.price} onChange={handleChange}></input>
         <button className="submit-button" type="submit">Submit</button>
       </form>
+      {success && <p className="success-message">New Book Added!</p>}
+      {error && <p className="error-message">{error}</p>}
+    </>
   )
 }
 
