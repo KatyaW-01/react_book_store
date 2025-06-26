@@ -16,6 +16,8 @@ html, body {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 20px;
+  box-sizing: border-box;
+  margin: 20px
   
 }
 
@@ -24,15 +26,37 @@ html, body {
 }
 
 .book-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 3px solid #D2B48C;
   background-color: 	#FFEBCD;
   color: black;
-  width: 400px; 
+  max-width: 100%; 
   height: 300px;
   padding: 15px;
   text-align: center;
-  font-size: 17px;
-  margin-bottom: 0
+  font-size: clamp(14px, 1.5vw, 17px);
+  margin-bottom: 0;
+  overflow: hidden
+}
+
+.book-content {
+  overflow: auto;
+  max-height: 100%
+}
+
+.book-actions {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-shrink: 0
 }
 
 .store-name {
@@ -133,4 +157,20 @@ input {
 
 .error-message {
   color: red
+}
+
+@media (max-width: 1024px) {
+  .book-div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .book-div {
+    grid-template-columns: 1fr;
+  }
+
+  .book-card {
+    width: 100%;
+  }
 }
