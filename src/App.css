@@ -126,3 +126,11 @@ input {
   background-color: #696969;
   border: 1px solid #696969
 }
+
+.success-message {
+  color: green
+}
+
+.error-message {
+  color: red
+}

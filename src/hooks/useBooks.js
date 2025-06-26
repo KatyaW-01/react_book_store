@@ -34,7 +34,7 @@ import { useEffect, useState } from 'react';
   }
 
   function editBook(bookObject) {
-    fetch(`http://localhost:3001/books/${bookObject.id}`, {
+    return fetch(`http://localhost:3001/books/${bookObject.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json"
@@ -48,6 +48,7 @@ import { useEffect, useState } from 'react';
             book.id === savedBook.id ? savedBook : book
           )
         )
+        return savedBook
       })
   }
 
