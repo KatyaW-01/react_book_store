@@ -28,7 +28,6 @@ function NewBookForm() {
         setError("Something went wrong")
         setSuccess(false)
       })
-   
   }
 
   return (
