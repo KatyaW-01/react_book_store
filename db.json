@@ -70,6 +70,27 @@
       "author": "Aria Blackwell",
       "description": "An epic fantasy journey of rebellion, magic, and ancient prophecies",
       "price": "22.50"
+    },
+    {
+      "id": "3f1e",
+      "name": "Silent Echoes",
+      "author": "Jonas Weaver",
+      "description": "A psychological thriller where every whisper could be your last.",
+      "price": "11.25"
+    },
+    {
+      "id": "35b3",
+      "name": "Quantum Dreams",
+      "author": "Evan Cross",
+      "description": "A sci-fi adventure exploring the boundaries between reality and virtual existence",
+      "price": "19.50"
+    },
+    {
+      "id": "736b",
+      "name": "Whispers of the Forgotten",
+      "author": "Lila Thornwood",
+      "description": "A mysterious tale of lost memories and hidden worlds beyond the veil",
+      "price": "15.99"
     }
   ]
 }

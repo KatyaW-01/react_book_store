@@ -1,13 +1,27 @@
-# React + Vite
+# Books + Beyond
+A React and Vite application for a ficitional bookstore featuring a home page with the book shop name and description, a shop page with all the books displayed along with their description and price , as well as an admin page that allows users to edit, delete, and add new books.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+* The ability for users to switch between three main pages: Home, Shop, and Admin Portal
+* A fully functional search bar that dynamically displays search results
+* Two forms: one for editing books, and one for adding a new book
+* The ability to delete books
 
-Currently, two official plugins are available:
+### Skills Demonstrated
+* React Router with nested routes
+* Outlet
+* Custom hooks
+* useEffect hook
+* useParams hook
+* Links
+* Json server backend
+* Search bar 
+* Forms
+* API calls
+* Testing with Vitest and React testing library
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# react_book_store
+## Getting Started
+- clone repo onto your machine
+- cd into project directory and run npm install
+- run both npm run dev and npm run server 
+- copy the localhost link into your browser to view and interact with the application (http://localhost:5173/)
